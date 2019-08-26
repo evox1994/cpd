@@ -93,4 +93,11 @@ $(document).ready(function(){
 		}
 	});
 
+	function footerYear(){
+		var d = new Date();
+		var year = d.getFullYear();
+		$('#year-text').text(year);
+	}
+	footerYear();
+
 });
