@@ -38,6 +38,7 @@
 }
 .b-1-list li span {
 	color: #f91155;
+	font-weight: 700;
 }
 .b-1-list li:before {
 	content: '';
@@ -106,7 +107,7 @@
 	height: 18px;
 	position: absolute;
 	left: 0;
-	top: calc(50% - 9px);
+	top: calc(50% - 12px);
 	border: 1px solid rgb(51, 180, 177);
 	border-radius: 3px;
 }
@@ -206,9 +207,10 @@
 	border-radius: 5px;
 }
 .catalog-image {
+	display: block;
 	padding: 7px;
 	background-color: rgb(225, 225, 225);
-	height: 250px;
+	position: relative;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	-ms-transition: all 0.3s;
@@ -217,19 +219,15 @@
 .catalog-image:hover {
 	background-color: #33b4b1;
 }
-.catalog-image .wrap {
-	width: 100%;
-	height: 100%;
-	background-size: cover;
-	background-position: center bottom;
-	background-repeat: no-repeat;
-	position: relative;
+.catalog-image img {
+	display: block;
+	max-width: 100%;
 }
-.catalog-image .wrap:before {
+.catalog-image:before {
 	content: '';
 	display: block;
-	width: calc(100% - 14px);
-	height: calc(100% - 14px);
+	width: calc(100% - 28px);
+	height: calc(100% - 28px);
 	position: absolute;
 	left: 50%;
 	top: 50%;
@@ -243,7 +241,7 @@
 	-ms-transition: all 0.3s;
 	transition: all 0.3s;
 }
-.catalog-image:hover .wrap:before {
+.catalog-image:hover:before {
 	border-color: #33b4b1;
 }
 .catalog-top {
@@ -387,7 +385,6 @@
 		display: block;
 	}
 	.catalog-list li {
-		max-width: 420px;
 		width: 100%;
 	}
 }
@@ -430,24 +427,6 @@
 	.b-2 .wrap {
 		display: block;
 	}
-	.b-2 .filter {
-		max-width: none;
-		margin-bottom: 30px;
-	}
-	.b-2 .filter .title {
-		font-size: 16px;
-	}
-	.b-2 .filter form {
-		display: -webkit-flex;
-		display: -ms-flexbox;
-		display: flex;
-		justify-content: space-between;
-		align-items: flex-start;
-		flex-wrap: wrap;
-	}
-	.b-2 .filter-item {
-		width: calc(50% - 10px);
-	}
 	.b-2 .content {
 		width: 100%;
 	}
@@ -472,8 +451,25 @@
 	.catalog-list li {
 		width: calc(50% - 10px);
 	}
-	.catalog-image {
-		height: 190px;
+	.b-2 .filter {
+		position: fixed;
+		z-index: 200;
+		left: -150%;
+		top: 0;
+		background-color: #ffffff;
+		width: 100%;
+		height: 100vh;
+		overflow-x: hidden;
+		overflow-y: auto;
+		max-width: none;
+		padding: 30px 10px;
+		-webkit-transition: all 0.3s;
+		-moz-transition: all 0.3s;
+		-ms-transition: all 0.3s;
+		transition: all 0.3s;
+	}
+	.b-2 .filter.active {
+		left: 0;
 	}
 }
 @media screen and (max-width: 550px){
