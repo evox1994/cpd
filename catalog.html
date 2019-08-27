@@ -94,7 +94,11 @@
 	<div class="b b-2">
 		<div class="container">
 			<div class="wrap">
-				<div class="filter">
+				<div class="filter" id="filter">
+					<div class="filter-buttons">
+						<a href="#filter" class="filter-close btn">Скрыть</a>
+						<a href="#" class="filter-discharge btn">Сброс</a>
+					</div>
 					<div class="title">Каталог эффектов</div>
 					<form>
 						<div class="filter-item">
@@ -200,6 +204,7 @@
 								</li>
 							</ul>
 						</div>
+						<button type="submit">Применить</button>
 					</form>
 				</div>
 				<div class="content">
@@ -207,6 +212,7 @@
 						<p><span>Что такое декоративная штукатурка и краска?</span></p>
 						<a href="#" class="btn">Узнать подробнее</a>
 					</div>
+					<a href="#filter" class="filter-btn">Фильтры</a>
 					<ul class="catalog-list">
 						<li>
 							<div class="catalog-info">Осталось в наличии: меньше 100 м2</div>
