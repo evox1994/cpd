@@ -30,4 +30,9 @@ $(document).ready(function(){
 		return false;
 	});
 
+	$('.back-slider').slick({
+		arrows: false,
+		autoplay: true
+	});
+
 });
