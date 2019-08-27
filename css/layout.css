@@ -202,14 +202,14 @@ button[type="submit"] {
     border-radius: 5px;
     font-weight: 500;
     color: #ffffff;
-    background-color: rgb(255, 153, 0);
+    background-color: rgb(51, 180, 177);
     font-size: 14px;
     border: 0;
     width: 100%;
     max-width: 200px;
 }
 button[type="submit"]:hover {
-    background-color: rgb(235, 133, 0);
+    background-color: rgb(31, 160, 157);
 }
 .mobile-btn {
 	display: none;
@@ -388,8 +388,8 @@ button[type="submit"]:hover {
     background-color: #ff0000;
 }
 .policy-text .radio-btn.active {
-    border-color: #ff9900;
-    background-color: #ff9900;
+    border-color: rgb(51, 180, 177);
+    background-color: rgb(51, 180, 177);
 }
 .policy-text .radio-btn:hover {
     cursor: pointer;
@@ -402,7 +402,7 @@ button[type="submit"]:hover {
     position: absolute;
     left: 3px;
     top: 12px;
-    background-color: #2b2a27;
+    background-color: #ffffff;
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
@@ -416,7 +416,7 @@ button[type="submit"]:hover {
     position: absolute;
     left: 7px;
     top: 10px;
-    background-color: #2b2a27;
+    background-color: #ffffff;
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
