@@ -91,7 +91,7 @@
 }
 .b-2 .filter-buttons {
 	display: none;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 .b-2 .filter-buttons .btn {
 	display: block;
@@ -106,6 +106,7 @@
 	font-size: 20px;
 	font-weight: 700;
 	line-height: 1.2;
+	margin-bottom: 20px;
 }
 .b-2 .filter .type {
 	display: block;
@@ -115,6 +116,9 @@
 	line-height: 1.2;
 	margin-top: 20px;
 	margin-bottom: 10px;
+}
+.b-2 .filter .type:first-child {
+	margin-top: 0;
 }
 .b-2 .filter ul li {
 	margin-bottom: 10px;
@@ -173,10 +177,16 @@
 	left: 0;
 	bottom: 0;
 }
-.b-2 .filter button[type="submit"] {
+.b-2 .filter .submit-wrap {
 	display: none;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: 10px;
+	padding: 0 10px;
+}
+.b-2 .filter button[type="submit"] {
 	max-width: none;
-	margin: 20px auto 0;
 }
 .b-2 .content {
 	width: calc(100% - 300px);
@@ -511,7 +521,7 @@
 		overflow-x: hidden;
 		overflow-y: auto;
 		max-width: none;
-		padding: 30px 10px;
+		padding: 30px 10px 70px;
 		-webkit-transition: all 0.3s;
 		-moz-transition: all 0.3s;
 		-ms-transition: all 0.3s;
@@ -520,7 +530,15 @@
 	.b-2 .filter.active {
 		left: 0;
 	}
-	.b-2 .filter button[type="submit"] {
+	.b-2 .filter form {
+		padding: 10px 0;
+		height: calc(100vh - 201px);
+		overflow-x: hidden;
+		overflow-y: auto;
+		border-top: 1px solid #d0d0d0;
+		border-bottom: 1px solid #d0d0d0;
+	}
+	.b-2 .filter .submit-wrap {
 		display: block;
 	}
 }
