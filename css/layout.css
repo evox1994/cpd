@@ -179,6 +179,9 @@ input, textarea {
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
     transition: all 0.3s;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
 }
 textarea {
     resize: none;
@@ -210,6 +213,84 @@ button[type="submit"] {
 }
 button[type="submit"]:hover {
     background-color: rgb(31, 160, 157);
+}
+.checkboxs-title {
+    display: block;
+    font-size: 15px;
+    color: rgb(121, 119, 119);
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+.checkboxs {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.checkboxs li {
+    margin-bottom: 10px;
+}
+.checkboxs li input {
+    display: none;
+}
+.checkboxs li label {
+    display: inline-block;
+    position: relative;
+    padding-left: 35px;
+    font-size: 13px;
+    color: rgb(121, 119, 119);
+    line-height: 1.2;
+}
+.checkboxs li label:hover {
+    cursor: pointer;
+}
+.checkboxs li label .checkbox {
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border: 1px solid rgb(238, 242, 247);
+    background-color: rgb(238, 242, 247);
+    border-radius: 4px;
+    left: 0;
+    top: calc(50% - 12.5px);
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.checkboxs li input:checked + label .checkbox {
+    border-color: rgb(51, 180, 177);
+    background-color: rgb(51, 180, 177);
+}
+.checkboxs li input:checked + label .checkbox:before {
+    content: '';
+    display: block;
+    width: 9px;
+    height: 2px;
+    position: absolute;
+    left: 3px;
+    top: 12px;
+    background-color: #ffffff;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.checkboxs li input:checked + label .checkbox:after {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 2px;
+    position: absolute;
+    left: 7px;
+    top: 10px;
+    background-color: #ffffff;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
 }
 .mobile-btn {
 	display: none;
@@ -368,7 +449,7 @@ button[type="submit"]:hover {
     transition: all 0.3s;
 }
 .policy-text a:hover {
-    color: #ff9900;
+    color: #33b4b1;
 }
 .policy-text .radio-btn {
     display: block;
@@ -732,6 +813,59 @@ button[type="submit"]:hover {
     vertical-align: middle;
 }
 
+.whatsapp-block {
+    padding: 45px 0;
+    text-align: left;
+}
+.whatsapp-block .wrap {
+    display: block;
+    border-radius: 5px;
+    background-color: rgb(242, 242, 242);
+    max-width: 630px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 22px 20px 22px 200px;
+    position: relative;
+}
+.whatsapp-block .image {
+    display: block;
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    left: 50px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.whatsapp-block .image img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+}
+.whatsapp-block .text {
+    display: block;
+    font-size: 16px;
+    color: rgb(9, 7, 37);
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+.whatsapp-block .text a {
+    color: rgb(9, 7, 37);
+    font-weight: 700;
+    white-space: nowrap;
+}
+.whatsapp-block .b-btn {
+    max-width: 200px;
+    padding: 16px 10px;
+    background-color: rgb(0, 230, 118);
+}
+.whatsapp-block .b-btn:hover {
+    background-color: rgb(0, 210, 98);
+}
+
 
 
 
@@ -786,6 +920,9 @@ button[type="submit"]:hover {
         left: 15px;
         top: 16px;
     }
+    .checkboxs-title {
+        font-size: 14px;
+    }
     .mobile-btn, .close-btn, .mobile-menu {
         display: block;
     }
@@ -828,6 +965,18 @@ button[type="submit"]:hover {
     .footer .social {
         margin: 0 auto;
     }
+    .whatsapp-block {
+        padding: 30px 0;
+    }
+    .whatsapp-block .wrap {
+        padding: 22px 20px 22px 150px;
+    }
+    .whatsapp-block .image {
+        left: 30px;
+    }
+    .whatsapp-block .text {
+        font-size: 14px;
+    }
 }
 @media screen and (max-width: 550px){
     .footer {
@@ -847,5 +996,30 @@ button[type="submit"]:hover {
     }
     .footer-left-info ul li:last-child {
         margin-bottom: 0;
+    }
+    .whatsapp-block {
+        text-align: center;
+    }
+    .whatsapp-block .wrap {
+        padding: 22px 20px;
+    }
+    .whatsapp-block .image {
+        position: static;
+        margin: 0 auto 15px;
+        width: 60px;
+        height: 60px;
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+    .whatsapp-block .b-btn {
+        margin: 0 auto;
+    }
+    .checkboxs-title {
+        margin-bottom: 10px;
+    }
+    .checkboxs {
+        display: block;
     }
 }

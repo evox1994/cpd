@@ -11,7 +11,7 @@
 
 	var DEFAULT_SETTINGS = { decelerate: true
 							  , triggerHardware: false
-							  , y: true
+							  , y: false
 							  , x: true
 							  , slowdown: 0.9
 							  , maxvelocity: 40
@@ -291,7 +291,7 @@
 				touchMove: function (e) {
 					if (mouseDown) {
 						inputmove(e.touches[0].clientX, e.touches[0].clientY);
-						if (e.preventDefault) { e.preventDefault(); }
+						//if (e.preventDefault) { e.preventDefault(); }
 					}
 				},
 				inputDown: function (e) {
@@ -299,7 +299,7 @@
 						start(e.clientX, e.clientY);
 						elementFocused = e.target;
 						if (e.target.nodeName === 'IMG') {
-							e.preventDefault();
+							//e.preventDefault();
 						}
 						e.stopPropagation();
 					}
@@ -307,17 +307,17 @@
 				inputEnd: function (e) {
 					end();
 					elementFocused = null;
-					if (e.preventDefault) { e.preventDefault(); }
+					//if (e.preventDefault) { e.preventDefault(); }
 				},
 				inputMove: function (e) {
 					if (mouseDown) {
 						inputmove(e.clientX, e.clientY);
-						if (e.preventDefault) { e.preventDefault(); }
+						//if (e.preventDefault) { e.preventDefault(); }
 					}
 				},
 				inputClick: function (e) {
 					if (Math.abs(settings.velocity) > 0) {
-						e.preventDefault();
+						//e.preventDefault();
 						return false;
 					}
 				},
