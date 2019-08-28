@@ -274,7 +274,7 @@
 }
 .slider-mobile .b-3-slide {
 	display: block;
-	width: 200px;
+	width: 100px;
 }
 .slider-mobile .b-3-slide:last-child {
 	margin-right: 0;
@@ -465,6 +465,9 @@
 	.b-3 .item-top .icon .number {
 		font-size: 16px;
 	}
+	.slider-mobile .b-3-slide {
+		width: 80px;
+	}
 	.b-5 .wrap {
 		padding: 30px 10px;
 	}
@@ -477,6 +480,9 @@
 	}
 	.b-5 .content p {
 		font-size: 14px;
+	}
+	.b-6 {
+		padding: 30px 0;
 	}
 }
 @media screen and (max-width: 550px){

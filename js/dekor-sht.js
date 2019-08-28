@@ -13,7 +13,7 @@ $(document).ready(function(){
 			{
 				breakpoint: 1080,
 				settings: {
-					slidesToShow: 2
+					slidesToShow: 3
 				}
 			}
 		]
