@@ -24,4 +24,19 @@ $(document).ready(function(){
 		touchScrolling: true
 	});
 
+	$(document).on('click','.swap-texture',function(){
+		var src = $(this).attr('href');
+		$(this).parents('.wrap').find('.texture').css('background-image','url("'+src+'")');
+		return false;
+	});
+
+	function textureHeight(){
+		$('.texture').css('height',$('.texture').outerWidth());
+	}
+	textureHeight();
+
+	$(window).resize(function(){
+		textureHeight();
+	});
+
 });

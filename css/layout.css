@@ -372,6 +372,8 @@ button[type="submit"]:hover {
 	width: 26px;
 	height: 22px;
 	z-index: 1;
+    left: 15px;
+    top: 24.5px;
 }
 .close-btn::after {
 	content: '';
@@ -420,6 +422,8 @@ button[type="submit"]:hover {
 	height: 100vh;
 	padding: 30px 10px;
 	background-color: #ffffff;
+    overflow-x: hidden;
+    overflow-y: auto;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	-ms-transition: all 0.3s;
@@ -427,6 +431,80 @@ button[type="submit"]:hover {
 }
 .mobile-menu.active {
 	top: 0;
+}
+.mobile-menu .nav {
+    text-align: left;
+    margin-top: 20px;
+}
+.mobile-menu .nav li {
+    padding: 20px 0;
+    border-bottom: 1px solid #e7e8ea;
+    display: block;
+    font-size: 14px;
+    line-height: 1.2;
+    color: rgb(16, 100, 98);
+}
+.mobile-menu .nav li:last-child {
+    border: 0;
+}
+.mobile-menu .nav li a {
+    color: rgb(16, 100, 98);
+}
+.mobile-menu .nav li a:hover {
+    color: #33b4b1;
+}
+.mobile-menu .nav li.drop span {
+    display: block;
+    position: relative;
+    padding-right: 20px;
+    cursor: pointer;
+}
+.mobile-menu .nav li.drop span:before {
+    content: '';
+    display: block;
+    width: 11px;
+    height: 17px;
+    position: absolute;
+    right: 3px;
+    top: calc(50% - 8.5px);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../i/arrow-a.png');
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.mobile-menu .nav li.drop.active span:before {
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
+.mobile-menu .nav li.drop .drop-wrap {
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.mobile-menu .nav li.drop.active .drop-wrap {
+    padding-top: 10px;
+    max-height: 300px;
+}
+.mobile-menu .nav li.drop .drop-wrap .drop-item {
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+.mobile-menu .nav li.drop .drop-wrap .drop-item:last-child {
+    margin-bottom: 0;
 }
 
 .policy-text {
@@ -554,7 +632,7 @@ button[type="submit"]:hover {
 .header-top .nav li {
     font-size: 12px;
     font-weight: normal;
-    line-height: 1.7;
+    line-height: 1.2;
     color: #797777;
 }
 .header-top .nav li a {

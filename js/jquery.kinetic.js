@@ -299,7 +299,7 @@
 						start(e.clientX, e.clientY);
 						elementFocused = e.target;
 						if (e.target.nodeName === 'IMG') {
-							//e.preventDefault();
+							e.preventDefault();
 						}
 						e.stopPropagation();
 					}

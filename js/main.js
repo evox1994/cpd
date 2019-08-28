@@ -110,4 +110,8 @@ $(document).ready(function(){
 	}
 	checkId();
 
+	$(document).on('click','.mobile-menu .drop span',function(){
+		$(this).parents('.drop').toggleClass('active');
+	});
+
 });
