@@ -600,6 +600,9 @@ button[type="submit"]:hover {
 .b-title a:hover {
     color: #33b4b1;
 }
+.b-title b {
+    color: #33b4b1;
+}
 .b-btn {
     display: block;
     border-radius: 5px;
