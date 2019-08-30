@@ -476,6 +476,13 @@
 	.b-6 {
 		padding: 30px 0;
 	}
+	.b-6 .wrap {
+		margin-top: 20px;
+		padding-bottom: 20px;
+	}
+	.b-6 .wrap .title {
+		margin-bottom: 20px;
+	}
 }
 @media screen and (max-width: 550px){
 	.b-2 {
@@ -499,13 +506,6 @@
 	}
 	.b-6-form .policy-text {
 		margin-top: 15px;
-	}
-	.b-6 .wrap {
-		margin-top: 20px;
-		padding-bottom: 20px;
-	}
-	.b-6 .wrap .title {
-		margin-bottom: 20px;
 	}
 	.b-6 .wrap .title br {
 		display: none;

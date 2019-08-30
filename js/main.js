@@ -110,6 +110,16 @@ $(document).ready(function(){
 	}
 	checkId();
 
+	function radioId(){
+		var i = 0;
+		$('.checkboxs input[type="radio"]').each(function(){
+			i++;
+			$(this).attr('id','radio-'+i);
+			$(this).parents('li').find('label').attr('for','radio-'+i);
+		});
+	}
+	radioId();
+
 	$(document).on('click','.mobile-menu .drop span',function(){
 		$(this).parents('.drop').toggleClass('active');
 	});
