@@ -202,10 +202,21 @@ input:focus, textarea:focus {
     background-color: #ffffff;
 }
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-	color: #797777;
+	color: transparent;
 }
 input:-moz-placeholder, textarea:-moz-placeholder {
-	color: #797777;
+	color: transparent;
+}
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+    color: #797777;
+}
+input:focus:-moz-placeholder, textarea:focus:-moz-placeholder {
+    color: #797777;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 button[type="submit"] {
     display: block;
@@ -557,7 +568,6 @@ button[type="submit"]:hover {
 }
 .policy-text .radio-btn.error {
     border-color: #ff0000;
-    background-color: #ff0000;
 }
 .policy-text .radio-btn.active {
     border-color: rgb(51, 180, 177);
@@ -625,6 +635,9 @@ button[type="submit"]:hover {
     background-color: rgb(31, 160, 157);
 }
 
+.header {
+    z-index: 100;
+}
 .header-top {
     padding: 8px 0;
     background-color: rgb(226, 226, 226);
@@ -718,6 +731,9 @@ button[type="submit"]:hover {
     padding-top: 22px;
     padding-bottom: 15px;
 }
+.header-bot .wrap {
+    align-items: flex-start;
+}
 .header-bot .nav {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -725,6 +741,7 @@ button[type="submit"]:hover {
     justify-content: flex-start;
     align-items: center;
     width: calc(100% - 385px);
+    margin-top: 10px;
 }
 .header-bot .nav li {
     display: block;
@@ -732,6 +749,7 @@ button[type="submit"]:hover {
     line-height: 1.5;
     color: rgb(16, 100, 98);
     margin-right: 15px;
+    position: relative;
 }
 .header-bot .nav li:last-child {
     margin-right: 0;
@@ -741,6 +759,34 @@ button[type="submit"]:hover {
 }
 .header-bot .nav li a:hover {
     color: #33b4b1;
+}
+.header-bot .nav li.drop .drop-wrap {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    min-width: 100%;
+    padding-top: 5px;
+}
+.header-bot .nav li.drop:hover .drop-wrap {
+    display: block;
+}
+.header-bot .nav li.drop .drop-wrap .wrap {
+    display: block;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid rgb(242, 242, 242);
+    text-align: left;
+}
+.header-bot .nav li.drop .drop-wrap .wrap .drop-item {
+    margin-bottom: 5px;
+}
+.header-bot .nav li.drop .drop-wrap .wrap .drop-item:last-child {
+    margin-bottom: 0;
+}
+.header-bot .nav li.drop .drop-wrap .wrap .drop-item a {
+    font-size: 12px;
+    white-space: nowrap;
 }
 .header-bot .info {
     width: 160px;
@@ -757,7 +803,7 @@ button[type="submit"]:hover {
     line-height: 1.2;
     position: relative;
     padding-left: 26px;
-    font-size: 10px;
+    font-size: 12px;
     margin-top: 6px;
 }
 .header .wa:hover {
@@ -803,12 +849,12 @@ button[type="submit"]:hover {
     padding-bottom: 30px;
 }
 .footer-left-top ul {
-    width: calc(25% - 22.5px);
+    width: calc(25% - 6px);
 }
 .footer-left-top ul li {
     display: block;
     line-height: 1.5;
-    font-size: 12px;
+    font-size: 13px;
     color: #797777;
     margin-bottom: 5px;
 }
@@ -1014,6 +1060,9 @@ button[type="submit"]:hover {
         left: 15px;
         top: 16px;
     }
+    button[type="submit"] {
+        max-width: none;
+    }
     .checkboxs-title {
         font-size: 14px;
     }
@@ -1024,7 +1073,7 @@ button[type="submit"]:hover {
         font-size: 18px;
     }
     .header {
-        border-bottom: 1px solid #000000;
+        border-bottom: 1px solid rgb(242, 242, 242);
     }
     .header-top, .header-bot .header-logo, .header-bot .nav {
         display: none;

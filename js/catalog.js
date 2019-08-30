@@ -32,7 +32,8 @@ $(document).ready(function(){
 
 	$('.back-slider').slick({
 		arrows: false,
-		autoplay: true
+		autoplay: true,
+		speed: 1000
 	});
 
 });

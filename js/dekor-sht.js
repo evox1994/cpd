@@ -2,11 +2,11 @@ $(document).ready(function(){
 
 	$('.back-slider').slick({
 		arrows: false,
-		autoplay: true
+		autoplay: true,
+		speed: 1000
 	});
 
 	$('.slider-desktop').slick({
-		infinite: false,
 		slidesToScroll: 1,
 		slidesToShow: 5,
 		responsive: [

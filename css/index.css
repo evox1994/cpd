@@ -52,7 +52,7 @@
 	border: 0;
 	background-color: transparent;
 	font-size: 0;
-	width: 15px;
+	width: 29px;
 	height: 29px;
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -64,12 +64,12 @@
 	z-index: 10;
 }
 .b-1-slider .slick-prev {
-	background-image: url("../i/prev-1.png");
-	left: 15px;
+	background-image: url("../i/prev-1.svg");
+	left: 8px;
 }
 .b-1-slider .slick-next {
-	background-image: url("../i/next-1.png");
-	right: 15px;
+	background-image: url("../i/next-1.svg");
+	right: 8px;
 }
 .b-1-slider .slick-dots {
 	position: absolute;
@@ -204,9 +204,6 @@
 	-ms-transition: all 0.3s;
 	transition: all 0.3s;
 }
-.catalog-image:hover {
-	background-color: #33b4b1;
-}
 .catalog-image img {
 	display: block;
 	max-width: 100%;
@@ -266,6 +263,12 @@
 	font-weight: 700;
 	line-height: 1.2;
 	margin-top: 15px;
+}
+.catalog-name a {
+	color: #000000;
+}
+.catalog-name a:hover {
+	color: #33b4b1;
 }
 .catalog-description {
 	display: block;
@@ -548,6 +551,9 @@
 	}
 }
 @media screen and (max-width: 768px){
+	.b-1 {
+		padding-top: 30px;
+	}
 	.b-1 .action {
 		display: block;
 		margin-bottom: 15px;
@@ -580,7 +586,6 @@
 	}
 	.b-2, .b-3, .b-4 {
 		padding: 20px 0;
-		text-align: center;
 	}
 	.catalog-slider {
 		text-align: left;
@@ -623,7 +628,7 @@
 	}
 	.b-6-list li {
 		font-size: 14px;
-		margin-bottom: 5px;
+		margin-bottom: 10px;
 		padding-left: 15px;
 	}
 	.b-6-list li:before {
@@ -704,7 +709,7 @@
 	}
 	.brand-list li {
 		width: calc(50% - 5px);
-		margin: 0 0 10px !important;
+		margin: 0 0 20px !important;
 	}
 }
 @media screen and (max-width: 400px){

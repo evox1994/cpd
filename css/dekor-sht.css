@@ -25,7 +25,6 @@
 .b-1 .content {
 	position: relative;
 	background-color: rgba(0,0,0,0.5);
-	margin-left: auto;
 	width: 100%;
 	max-width: 630px;
 	padding: 37px 35px;

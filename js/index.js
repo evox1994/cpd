@@ -9,7 +9,6 @@ $(document).ready(function(){
 	});
 
 	$('.catalog-desktop').slick({
-		infinite: false,
 		slidesToScroll: 1,
 		slidesToShow: 3,
 		responsive: [
@@ -25,6 +24,10 @@ $(document).ready(function(){
 	$('.catalog-mobile').smoothDivScroll({
 		hotSpotScrolling: false,
 		touchScrolling: true
+	});
+
+	$(document).on('click','.example-list li',function(){
+		location.href = $(this).attr('href');
 	});
 
 });

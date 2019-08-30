@@ -124,4 +124,11 @@ $(document).ready(function(){
 		$(this).parents('.drop').toggleClass('active');
 	});
 
+	$(document).on('click','.scroll-btn',function(){
+		var el = $(this).attr('href');
+		var des = $(el).offset().top;
+		$('body,html').animate({scrollTop: des},800);
+		return false;
+	});
+
 });
