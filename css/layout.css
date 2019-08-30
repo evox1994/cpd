@@ -279,6 +279,10 @@ button[type="submit"]:hover {
     box-sizing: border-box;
     cursor: pointer;
 }
+.checkboxs li input + label .checkbox {
+    border-color: rgb(238, 242, 247);
+    background-color: rgb(238, 242, 247);
+}
 .checkboxs li input:checked + label .checkbox {
     border-color: rgb(51, 180, 177);
     background-color: rgb(51, 180, 177);
