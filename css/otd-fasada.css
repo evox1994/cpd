@@ -1041,6 +1041,9 @@
 	.b-10 .wrap .title {
 		margin-bottom: 20px;
 	}
+	.b-10-form button[type="submit"] {
+		max-width: 200px;
+	}
 }
 @media screen and (max-width: 550px){
 	.b-1 .wrap {
@@ -1070,5 +1073,8 @@
 	}
 	.b-10 .wrap .title br {
 		display: none;
+	}
+	.b-10-form button[type="submit"] {
+		max-width: none;
 	}
 }
