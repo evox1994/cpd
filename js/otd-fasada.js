@@ -2,7 +2,8 @@ $(document).ready(function(){
 
 	$('.back-slider').slick({
 		arrows: false,
-		autoplay: true
+		autoplay: true,
+		speed: 1000
 	});
 
 	$('.b-6-slider').slick({

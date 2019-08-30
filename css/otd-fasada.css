@@ -25,7 +25,6 @@
 .b-1 .content {
 	position: relative;
 	background-color: rgba(0,0,0,0.5);
-	margin-left: auto;
 	width: 100%;
 	max-width: 630px;
 	padding: 35px 20px;
@@ -345,7 +344,7 @@
 }
 .b-6-slider {
 	width: 100%;
-	max-width: 600px;
+	max-width: 640px;
 	margin: 40px auto 0;
 	padding: 0 50px;
 	position: relative;
@@ -719,6 +718,9 @@
 }
 .b-10-form button[type="submit"] {
 	order: 2;
+}
+.b-10-form .checkboxs {
+	display: block;
 }
 
 
