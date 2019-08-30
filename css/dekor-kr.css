@@ -429,7 +429,7 @@
 	.b-1 .subtitle {
 		font-size: 12px;
 	}
-	.b-1 .line {
+	.b-1 .line, .b-1.b-1-1 .line {
 		max-width: 116px;
 		margin: 10px auto 20px;
 	}
