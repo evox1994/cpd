@@ -31,10 +31,12 @@ $(document).ready(function(){
 	});
 
 	function textureSize(){
-		var w = $('.texture').parents('.image').find('img').width()*(196/213);
-		var h = $('.texture').parents('.image').find('img').height()*(265/440);
-		$('.texture').height(h);
-		$('.texture').width(w);
+		setTimeout(function(){
+			var w = $('.texture').parents('.image').find('img').width()*(196/213);
+			var h = $('.texture').parents('.image').find('img').height()*(265/440);
+			$('.texture').height(h);
+			$('.texture').width(w);
+		},100);
 	}
 	textureSize();
 

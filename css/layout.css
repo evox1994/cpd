@@ -71,11 +71,19 @@ body {
 	-webkit-text-size-adjust: none;
 	color: #000000;
     font-family: 'Geometria', sans-serif;
+    box-sizing: border-box;
 }
 body.no-scroll {
 	height: 100vh !important;
-	box-sizing: border-box;
 	overflow: hidden !important;
+}
+body .body-wrap {
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+body.no-scroll .body-wrap {
+    height: 100vh !important;
+    overflow: hidden !important;
 }
 a{
 	text-decoration: none;
