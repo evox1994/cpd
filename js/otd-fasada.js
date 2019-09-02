@@ -32,6 +32,7 @@ $(document).ready(function(){
 
 	function alignItems(){
 		setTimeout(function(){
+			$('.b-4-list .text').parents('.wrap-bot').find('.b-btn').css('margin-top',25);
 			var height = maxH('.b-4-list .text');
 			if ( $(window).width() > 768 ){
 				$('.b-4-list .text').each(function(){

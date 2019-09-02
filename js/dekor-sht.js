@@ -32,8 +32,8 @@ $(document).ready(function(){
 
 	function textureSize(){
 		setTimeout(function(){
-			var w = $('.texture').parents('.image').find('img').width()*(196/213);
-			var h = $('.texture').parents('.image').find('img').height()*(265/440);
+			var w = $('.texture').parents('.image').find('img').width()*(164/176);
+			var h = $('.texture').parents('.image').find('img').height()*(220/364);
 			$('.texture').height(h);
 			$('.texture').width(w);
 		},100);

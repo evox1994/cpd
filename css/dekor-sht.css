@@ -166,6 +166,7 @@
 	margin: 0 auto;
 	max-width: 100%;
 	position: relative;
+	max-height: 364px;
 }
 .b-3 .wrap .image .texture {
 	display: block;

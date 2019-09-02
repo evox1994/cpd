@@ -231,6 +231,7 @@
 	margin-right: 0;
 }
 .b-4-list .li-info {
+	display: inline-block;
 	margin-bottom: 10px;
 	padding: 9px 15px;
 	background-color: rgb(246, 247, 248);
@@ -344,7 +345,7 @@
 }
 .b-6-slider {
 	width: 100%;
-	max-width: 640px;
+	/*max-width: 640px;*/
 	margin: 40px auto 0;
 	padding: 0 50px;
 	position: relative;
@@ -419,10 +420,10 @@
 	transition: all 0.3s;
 }
 .b-6-slide.slick-center img {
-	-webkit-transform: scale(1.2);
-	-moz-transform: scale(1.2);
-	-ms-transform: scale(1.2);
-	transform: scale(1.2);
+	-webkit-transform: scale(1.06);
+	-moz-transform: scale(1.06);
+	-ms-transform: scale(1.06);
+	transform: scale(1.06);
 }
 .b-6-slide p {
 	display: inline-block;
@@ -482,7 +483,7 @@
 	width: 100%;
 	padding-left: 15px;
 	max-width: 415px;
-	border-left: 1px solid rgb(255, 153, 0);
+	/*border-left: 1px solid rgb(255, 153, 0);*/
 	text-align: left;
 }
 .b-7 .content .b-7-form .policy-text {
@@ -848,12 +849,14 @@
 	}
 	.b-3 .wrap .text {
 		width: 100%;
+		text-align: center;
 	}
 	.b-3 .wrap .text ul {
 		margin-top: 20px;
 	}
 	.b-3 .wrap .text ul li {
 		font-size: 14px;
+		text-align: left;
 		padding-left: 15px;
 	}
 	.b-3 .wrap .text ul li:before {
@@ -901,8 +904,10 @@
 	}
 	.b-5 .wrap {
 		padding: 20px 10px;
+		text-align: center;
 	}
 	.b-5 .wrap .text p {
+		text-align: left;
 		font-size: 12px;
 	}
 	.b-6-slider {
@@ -915,12 +920,6 @@
 	}
 	.b-6-slide {
 		margin: 10px;
-	}
-	.b-6-slide.slick-center img {
-		-webkit-transform: scale(1.1);
-		-moz-transform: scale(1.1);
-		-ms-transform: scale(1.1);
-		transform: scale(1.1);
 	}
 	.b-6-slide p {
 		font-size: 10px;
@@ -1039,6 +1038,7 @@
 		padding-bottom: 20px;
 	}
 	.b-10 .wrap .title {
+		font-size: 14px;
 		margin-bottom: 20px;
 	}
 	.b-10-form button[type="submit"] {
