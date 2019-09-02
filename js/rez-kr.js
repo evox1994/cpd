@@ -14,6 +14,20 @@ $(document).ready(function(){
 		]
 	});
 
+	$('.b-4-slider').slick({
+		slidesToShow: 1,
+		centerMode: true,
+		responsive: [
+			{
+				breakpoint: 550,
+				settings: {
+					centerMode: false,
+					slidesToShow: 1
+				}
+			}
+		]
+	});
+
 	function maxHeight(el){
 		var maxH = 0;
 		$(el).each(function(){
