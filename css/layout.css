@@ -233,6 +233,104 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: rgb(31, 160, 157);
 }
+.select-wrap {
+    position: relative;
+    margin: 0 auto 9px;
+    width: 100%;
+}
+.select-area {
+    display: block;
+    text-align: left;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 16px 45px 16px 25px;
+    width: 100%;
+    border: 1px solid rgb(238, 242, 247);
+    background-color: rgb(238, 242, 247);
+    font-size: 15px;
+    color: #000000;
+    line-height: 1.2;
+    position: relative;
+}
+.select-area.active {
+    border-radius: 5px 5px 0 0;
+    background-color: #ffffff;
+    border-color: #dddfe0;
+}
+.select-area::before {
+    content: '';
+    display: block;
+    width: 12px;
+    height: 8px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: calc(50% - 4px);
+    right: 16.5px;
+    background-image: url('../i/sel-arr.png');
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.select-area.active::before {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.select-area span {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+}
+.select-area:hover {
+    cursor: pointer;
+}
+.select-drop {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    border: 1px solid #dddfe0;
+    border-top: 0;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    border-radius: 0 0 5px 5px;
+    padding: 16px 25px;
+    box-sizing: border-box;
+    z-index: 10;
+    max-height: 140px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+.select-drop.active {
+    display: block;
+}
+.select-drop a {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 15px;
+    color: #000000;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.select-drop a:last-child {
+    margin-bottom: 0;
+}
+.select-wrap select {
+    display: none;
+    visibility: hidden;
+    border: 0;
+    width: 0;
+    height: 0;
+    margin: 0;
+    font-size: 0;
+    padding: 0;
+}
 .checkboxs-title {
     display: block;
     font-size: 15px;
@@ -1066,6 +1164,19 @@ button[type="submit"]:hover {
     }
     button[type="submit"] {
         max-width: none;
+    }
+    .select-area {
+        padding: 15px 35px 15px 15px;
+        font-size: 14px;
+    }
+    .select-area::before {
+        right: 11.5px;
+    }
+    .select-drop {
+        padding: 15px;
+    }
+    .select-drop a {
+        font-size: 14px;
     }
     .checkboxs-title {
         font-size: 14px;

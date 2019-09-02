@@ -28,6 +28,24 @@ $(document).ready(function(){
 		]
 	});
 
+	$('.slider-desktop').slick({
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		responsive:[
+			{
+				breakpoint: 1080,
+				settings: {
+					slidesToShow: 3
+				}
+			}
+		]
+	});
+
+	$('.slider-mobile').smoothDivScroll({
+		hotSpotScrolling: false,
+		touchScrolling: true
+	});
+
 	function maxHeight(el){
 		var maxH = 0;
 		$(el).each(function(){
