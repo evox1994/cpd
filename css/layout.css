@@ -1108,6 +1108,55 @@ button[type="submit"]:hover {
     background-color: rgb(0, 210, 98);
 }
 
+.popup {
+    display: block;
+    background-color: #ffffff;
+    padding: 40px 10px 20px;
+    width: 95%;
+    max-width: 300px;
+    text-align: center;
+}
+.popup .title {
+    font-size: 20px;
+    color: #000000;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+.popup form {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+.popup form button[type="submit"] {
+    max-width: none;
+}
+.popup form .policy-text {
+    max-width: 220px;
+}
+.popup-color .image {
+    display: block;
+    height: 150px;
+    margin-bottom: 20px;
+}
+.popup-color .name {
+    display: block;
+    font-size: 18px;
+    color: rgb(9, 7, 37);
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+.popup-color p {
+    display: block;
+    font-size: 14px;
+    line-height: 1.2;
+    margin: 0 auto 15px;
+    color: #747474;
+}
+.popup-color .b-btn {
+    padding: 17px 10px;
+}
+
 
 
 
