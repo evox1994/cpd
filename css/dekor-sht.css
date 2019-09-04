@@ -6,6 +6,14 @@
 	padding: 54px 50px;
 	position: relative;
 }
+.b-1.type-2 .wrap {
+	padding: 60px 0 30px;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
 .back-slider {
 	position: absolute;
 	width: 100%;
@@ -29,6 +37,13 @@
 	max-width: 630px;
 	padding: 37px 35px;
 }
+.b-1.type-2 .content {
+	width: calc(50% - 15px);
+	padding: 0;
+	background-color: transparent;
+	max-width: none;
+	text-align: left;
+}
 .b-1 .subtitle {
 	display: block;
 	font-size: 16px;
@@ -36,8 +51,14 @@
 	line-height: 1.2;
 	margin-bottom: 10px;
 }
+.b-1.type-2 .subtitle {
+	color: #000000;
+}
 .b-1 .b-title {
 	color: #ffffff;
+}
+.b-1.type-2 .b-title {
+	color: #000000;
 }
 .b-1 .prices {
 	display: -webkit-flex;
@@ -46,6 +67,9 @@
 	justify-content: center;
 	align-items: center;
 	margin-top: 20px;
+}
+.b-1.type-2 .prices {
+	justify-content: flex-start;
 }
 .b-1 .prices .discount {
 	display: block;
@@ -81,6 +105,10 @@
 	height: 3px;
 	width: 100%;
 }
+.b-1.type-2 .line {
+	max-width: 230px;
+	margin-left: 0;
+}
 .b-1 .content p {
 	display: block;
 	margin: 0 auto 25px;
@@ -89,9 +117,23 @@
 	font-size: 16px;
 	text-align: left;
 }
+.b-1.type-2 .content p {
+	color: #000000;
+}
 .b-1 .b-btn {
 	padding: 17px 10px;
 	max-width: 250px;
+	margin: 0 auto;
+}
+.b-1.type-2 .b-btn {
+	margin-left: 0;
+}
+.b-1.type-2 .image {
+	width: calc(50% - 15px);
+}
+.b-1.type-2 .image img {
+	display: block;
+	max-width: 100%;
 	margin: 0 auto;
 }
 
@@ -332,10 +374,18 @@
 	background-repeat: no-repeat;
 	background-image: url('../i/dekor-sht-b-5-fon.jpg');
 }
+.b-5.type-2 .wrap {
+	padding: 60px 0 10px;
+	background-image: none;
+}
 .b-5 .content {
 	max-width: 620px;
 	padding: 65px 30px;
 	background-color: rgba(255, 255, 255, 0.8);
+}
+.b-5.type-2 .content {
+	background-color: rgb(242, 242, 242);
+	margin: 0 auto;
 }
 .b-5 .line {
 	display: block;
@@ -425,9 +475,18 @@
 	.b-1 .wrap {
 		padding: 10px;
 	}
+	.b-1.type-2 .wrap {
+		padding: 30px 0 10px;
+	}
+	.b-1.type-2 .image img {
+		max-height: 300px;
+	}
 	.b-1 .content {
 		padding: 20px 10px;
 		margin: 0 auto;
+	}
+	.b-1.type-2 .content {
+		margin: 0;
 	}
 	.b-1 .subtitle {
 		font-size: 12px;
@@ -447,6 +506,10 @@
 	}
 	.b-1 .content p {
 		font-size: 12px;
+		margin: 0 auto 15px;
+	}
+	.b-2 {
+		padding: 30px 0;
 	}
 	.b-2 .title {
 		font-size: 14px;
@@ -489,8 +552,14 @@
 	.slider-mobile .b-3-slide {
 		width: 80px;
 	}
+	.b-4 {
+		padding: 30px 0;
+	}
 	.b-5 .wrap {
 		padding: 30px 10px;
+	}
+	.b-5.type-2 .wrap {
+		padding: 30px 0 10px;
 	}
 	.b-5 .content {
 		padding: 20px 10px;
@@ -517,8 +586,26 @@
 	}
 }
 @media screen and (max-width: 550px){
+	.b-1.type-2 .wrap {
+		display: block;
+	}
+	.b-1.type-2 .image {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.b-1.type-2 .content {
+		width: 100%;
+		text-align: center;
+		margin: 0 auto;
+	}
+	.b-1.type-2 .line {
+		max-width: 116px;
+		margin-left: auto;
+	}
+	.b-1.type-2 .b-btn {
+		margin-left: auto;
+	}
 	.b-2 {
-		padding: 30px 0;
 		text-align: center;
 	}
 	.b-2 .wrap {
