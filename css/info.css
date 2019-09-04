@@ -1,0 +1,125 @@
+.b-1 {
+	padding: 30px 0 60px;
+	text-align: left;
+}
+.b-1 .wrap {
+	padding-right: 430px;
+	position: relative;
+	min-height: 410px;
+}
+.b-1 .content .text {
+	margin-top: 20px;
+}
+.b-1 .content .text p {
+	display: block;
+	font-size: 16px;
+	line-height: 1.3;
+	color: #000000;
+	margin-bottom: 15px;
+}
+.b-1 .content .text p:last-child {
+	margin-bottom: 0;
+}
+.fix-window {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100%;
+	max-width: 400px;
+	border: 1px solid rgb(215, 215, 215);
+	border-radius: 3px;
+	text-align: center;
+}
+.fix-window.scroll {
+	position: fixed;
+	top: 30px;
+	right: auto;
+	left: calc(50% + 185px);
+}
+.fix-window.bottom {
+	position: absolute;
+	right: 0;
+	top: auto;
+	bottom: 0;
+}
+.fix-window .image {
+	height: 200px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url('../i/info-img.jpg');
+}
+.fix-window .text {
+	padding: 20px;
+}
+.fix-window .title {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 1.2;
+	color: #000000;
+	margin-bottom: 15px;
+}
+.fix-window .text p {
+	display: block;
+	font-size: 14px;
+	color: #000000;
+	line-height: 1.3;
+}
+.fix-window .b-btn {
+	padding: 17px 10px;
+	max-width: 250px;
+	margin: 20px auto 0;
+}
+
+
+
+
+@media screen and (max-width: 1230px){
+	.b-1 .wrap {
+		padding-right: 330px;
+	}
+	.fix-window {
+		max-width: 300px;
+	}
+	.fix-window.scroll {
+		left: auto;
+		right: 30px;
+	}
+	.fix-window .image {
+		height: 150px;
+	}
+}
+@media screen and (max-width: 768px){
+	.b-1 {
+		padding: 30px 0;
+		text-align: center;
+	}
+	.b-1 .wrap {
+		padding-right: 0;
+	}
+	.b-1 .content .text {
+		text-align: left;
+	}
+	.b-1 .content .text p {
+		display: block;
+		font-size: 12px;
+		margin-bottom: 10px;
+	}
+	.fix-window {
+		position: static !important;
+		margin: 30px auto 0;
+	}
+	.fix-window .text {
+		padding: 10px;
+	}
+	.fix-window .text .title {
+		font-size: 16px;
+		margin-bottom: 10px;
+	}
+	.fix-window .text p {
+		font-size: 12px;
+	}
+	.fix-window .b-btn {
+		margin: 15px auto 0;
+	}
+}
