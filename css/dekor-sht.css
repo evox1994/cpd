@@ -208,7 +208,6 @@
 	margin: 0 auto;
 	max-width: 100%;
 	position: relative;
-	max-height: 364px;
 }
 .b-3 .wrap .image .texture {
 	display: block;
@@ -216,7 +215,7 @@
 	background-color: #ffffff;
 	position: absolute;
 	left: 50%;
-	top: 30.8%;
+	top: 28.5%;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
