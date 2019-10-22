@@ -114,9 +114,6 @@
 	-ms-transition: all 0.3s;
 	transition: all 0.3s;
 }
-.cornices .catalog-image {
-	background-color: #cccccc;
-}
 .catalog-image img {
 	display: block;
 	max-width: 100%;
