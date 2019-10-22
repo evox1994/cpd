@@ -1,0 +1,261 @@
+.b-1 .wrap {
+	padding: 60px 0 30px;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.b-1 .wrap .image {
+	width: calc(45% - 15px);
+	position: relative;
+	background-color: #cccccc;
+}
+.b-1 .wrap .image img {
+	display: block;
+	max-height: 90%;
+	max-width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.b-1 .wrap .content {
+	position: relative;
+	width: calc(55% - 15px);
+	text-align: left;
+}
+.b-1 .subtitle {
+	display: block;
+	font-size: 16px;
+	color: #000000;
+	line-height: 1.2;
+	margin-bottom: 10px;
+}
+.b-1 .prices {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-top: 20px;
+}
+.b-1 .prices .discount {
+	display: block;
+	width: 55px;
+	padding: 10px 5px;
+	text-align: center;
+	color: #ffffff;
+	border-radius: 5px;
+	font-weight: 500;
+	font-size: 12px;
+	background-color: #f91155;
+	margin-right: 15px;
+}
+.b-1 .prices .price {
+	display: block;
+	margin-right: 15px;
+	font-size: 18px;
+	color: rgb(255, 77, 66);
+	font-weight: 700;
+	line-height: 1.2;
+}
+.b-1 .prices .old-price {
+	display: block;
+	font-size: 14px;
+	color: #b0b0b0;
+	text-decoration: line-through;
+	line-height: 1.2;
+}
+.b-1 .line {
+	margin: 18px auto 25px;
+	background-color: rgb(204, 204, 204);
+	max-width: 230px;
+	height: 3px;
+	width: 100%;
+	margin-left: 0;
+}
+.b-1 .content p {
+	display: block;
+	margin: 0 auto 25px;
+	line-height: 1.2;
+	color: #000000;
+	font-size: 16px;
+	text-align: left;
+}
+.b-1 .content p b {
+	font-weight: 700;
+}
+.b-1 .content p span {
+	color: #f91155;
+}
+.b-1 .b-btn {
+	padding: 17px 10px;
+	max-width: 310px;
+}
+
+.b-2 {
+	padding: 20px 0 10px;
+}
+.b-2-list {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+.b-2-list li {
+	width: calc(50% - 15px);
+	margin-bottom: 30px;
+}
+.b-2-list li img {
+	display: block;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.b-3 {
+	padding: 30px 0 80px;
+}
+.b-3 .wrap {
+	max-width: 770px;
+	width: 100%;
+	border-radius: 3px;
+	border: 1px solid rgb(215, 215, 215);
+	margin: 40px auto 0;
+	padding-bottom: 70px;
+}
+.b-3 .wrap .title {
+	width: 100%;
+	padding: 22px 10px;
+	background-color: rgb(149, 149, 149);
+	border-radius: 3px 3px 0 0;
+	margin-bottom: 50px;
+	font-size: 16px;
+	line-height: 1.2;
+	color: #ffffff;
+}
+.b-3-form {
+	max-width: 450px;
+	margin: 0 auto;
+	text-align: left;
+	padding: 0 10px;
+}
+.b-3-form .form-flex {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.b-3-form .policy-text {
+	max-width: 220px;
+	order: 1;
+	margin-top: 0;
+}
+.b-3-form button[type="submit"] {
+	order: 2;
+}
+
+
+
+
+@media screen and (max-width: 920px){
+	
+}
+@media screen and (max-width: 768px){
+	.b-1 .wrap {
+		padding: 30px 0 10px;
+	}
+	.b-1 .wrap .image {
+		width: calc(50% - 5px);
+	}
+	.b-1 .wrap .content {
+		width: calc(50% - 5px);
+	}
+	.b-1 .subtitle {
+		font-size: 12px;
+	}
+	.b-1 .line {
+		margin: 10px auto 20px;
+		margin-left: 0;
+	}
+	.b-1 .prices .discount {
+		margin-right: 10px;
+	}
+	.b-1 .prices .price {
+		font-size: 14px;
+		margin-right: 10px;
+	}
+	.b-1 .prices .old-price {
+		font-size: 12px;
+	}
+	.b-1 .content p {
+		font-size: 12px;
+		margin: 0 auto 15px;
+	}
+	.b-2-list {
+		display: block;
+	}
+	.b-2-list li {
+		width: 100%;
+		margin: 0 auto 10px;
+	}
+	.b-2-list li img {
+		max-height: 400px;
+	}
+	.b-3 {
+		padding: 30px 0;
+	}
+	.b-3 .wrap {
+		margin-top: 20px;
+		padding-bottom: 20px;
+	}
+	.b-3 .wrap .title {
+		margin-bottom: 20px;
+	}
+	.b-3-form button[type="submit"] {
+		max-width: 200px;
+	}
+}
+@media screen and (max-width: 550px){
+	.b-1 .wrap {
+		display: block;
+	}
+	.b-1 .wrap .image {
+		width: 100%;
+		max-width: 300px;
+		margin: 0 auto 20px;
+	}
+	.b-1 .wrap .content {
+		width: 100%;
+		text-align: center;
+		margin: 0 auto;
+	}
+	.b-1 .prices {
+		justify-content: center;
+	}
+	.b-1 .line {
+		max-width: 116px;
+		margin-left: auto;
+	}
+	.b-1 .b-btn {
+		margin: 0 auto;
+	}
+	.b-3-form .form-flex {
+		display: block;
+	}
+	.b-3-form .policy-text {
+		margin-top: 15px;
+	}
+	.b-3 .wrap .title br {
+		display: none;
+	}
+	.b-3-form button[type="submit"] {
+		max-width: none;
+	}
+}
