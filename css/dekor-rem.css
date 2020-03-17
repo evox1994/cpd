@@ -317,7 +317,7 @@
 }
 
 .b-5 {
-	padding: 40px 0 80px;
+	padding: 50px 0;
 }
 .b-5-steps {
 	display: -webkit-flex;
@@ -416,6 +416,118 @@
 	order: 2;
 }
 
+.b-6 {
+	padding: 50px 0;
+}
+.b-6-items {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: flex-start;
+	align-items: stretch;
+	flex-wrap: wrap;
+	margin-top: 35px;
+}
+.b-6-item {
+	display: block;
+	width: calc(100%/3 - 20px);
+	margin-right: 30px;
+	margin-bottom: 30px;
+	border: 1px solid rgb(215, 215, 215);
+	border-radius: 3px;
+}
+.b-6-item:nth-child(3n) {
+	margin-right: 0;
+}
+.b-6-item .image {
+	position: relative;
+	height: 200px;
+	background-image: -moz-linear-gradient( 167deg, rgb(199,199,204) 0%, rgb(240,241,246) 100%);
+	background-image: -webkit-linear-gradient( 167deg, rgb(199,199,204) 0%, rgb(240,241,246) 100%);
+	background-image: -ms-linear-gradient( 167deg, rgb(199,199,204) 0%, rgb(240,241,246) 100%);
+}
+.b-6-item .image img {
+	display: block;
+	max-width: 90%;
+	max-height: 90%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.b-6-item .text {
+	padding: 30px;
+	text-align: left;
+}
+.b-6-item .text .title {
+	display: block;
+	font-size: 18px;
+	color: #000000;
+	font-weight: 500;
+	line-height: 1.2;
+	margin-bottom: 25px;
+}
+.b-6-item .text ul li {
+	display: block;
+	text-align: left;
+	position: relative;
+	padding-left: 20px;
+	font-size: 14px;
+	color: #000000;
+	line-height: 1.2;
+	margin-bottom: 10px;
+}
+.b-6-item .text ul li:last-child {
+	margin-bottom: 0;
+}
+.b-6-item .text ul li:before {
+	content: '';
+	display: block;
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	left: 0;
+	top: 3px;
+	background-color: rgb(51, 180, 177);
+	border-radius: 50%;
+}
+
+.b-7 {
+	padding: 50px 0;
+}
+.b-7-items {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	margin-top: 40px;
+}
+.b-7-items .item {
+	width: calc(100%/3 - 20px);
+	margin-right: 30px;
+	margin-bottom: 30px;
+	text-align: left;
+}
+.b-7-items .item:nth-child(3n) {
+	margin-right: 0;
+}
+.b-7-items .item .title {
+	display: block;
+	font-size: 20px;
+	line-height: 1.2;
+	font-weight: 700;
+}
+.b-7-items .item .text {
+	margin-top: 20px;
+	font-size: 14px;
+	line-height: 1.2;
+}
+
 
 
 
@@ -445,6 +557,22 @@
 	}
 	.b-3-list li .abs-img {
 		max-height: 140px;
+	}
+
+	.b-6-items {
+		justify-content: space-between;
+	}
+	.b-6-item {
+		width: calc(50% - 15px);
+		margin-right: 0;
+	}
+
+	.b-7-items {
+		justify-content: space-between;
+	}
+	.b-7-items .item {
+		width: calc(50% - 15px);
+		margin-right: 0;
 	}
 }
 @media screen and (max-width: 768px){
@@ -628,6 +756,53 @@
 	.b-5-form button[type="submit"] {
 		max-width: 200px;
 	}
+
+	.b-6 {
+		padding: 30px 0;
+	}
+	.b-6-items {
+		margin-top: 20px;
+	}
+	.b-6-item {
+		width: calc(50% - 10px);
+		margin-bottom: 10px;
+	}
+	.b-6-item .image {
+		height: 150px;
+	}
+	.b-6-item .text {
+		padding: 15px 10px;
+	}
+	.b-6-item .text .title {
+		font-size: 16px;
+		margin-bottom: 15px;
+	}
+	.b-6-item .text ul li {
+		font-size: 12px;
+		padding-left: 15px;
+	}
+	.b-6-item .text ul li:before {
+		width: 6px;
+		height: 6px;
+	}
+
+	.b-7 {
+		padding: 30px 0;
+	}
+	.b-7-items {
+		margin-top: 20px;
+	}
+	.b-7-items .item {
+		width: calc(50% - 10px);
+		margin-bottom: 20px;
+	}
+	.b-7-items .item .title {
+		font-size: 16px;
+	}
+	.b-7-items .item .text {
+		margin-top: 15px;
+		font-size: 12px;
+	}
 }
 @media screen and (max-width: 560px){
 	.b-1-flex {
@@ -693,5 +868,28 @@
 	}
 	.b-5-form button[type="submit"] {
 		max-width: none;
+	}
+
+	.b-6-items {
+		display: block;
+	}
+	.b-6-item {
+		width: 100%;
+		max-width: 320px;
+		margin: 0 auto 10px !important;
+	}
+
+	.b-7-items {
+		display: block;
+	}
+	.b-7-items .item {
+		width: 100%;
+		margin: 0 auto 20px;
+	}
+	.b-7-items .item:nth-child(3n) {
+		margin-right: auto;
+	}
+	.b-7-items .item:last-child {
+		margin-bottom: 0;
 	}
 }
